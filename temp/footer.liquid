@@ -1,0 +1,10 @@
+<footer class="footer">
+  <div class="container footer-content">
+      <div class="footer-links">
+        {% for link in linklists.footer-1.links %}
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        {% endfor %}
+      </div>
+      <p>&copy; 2023 YourBrand, Inc. All rights reserved.</p>
+  </div>
+</footer>

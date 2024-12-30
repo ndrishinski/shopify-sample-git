@@ -1,0 +1,80 @@
+        /* Reset and base styles */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      body {
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+          line-height: 1.5;
+          color: #333;
+      }
+
+      /* Utility classes */
+      .container {
+          width: 100%;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
+      }
+
+      .btn {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #4f46e5;
+          color: white;
+          text-decoration: none;
+          border-radius: 5px;
+          font-weight: bold;
+          transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+          background-color: #4338ca;
+      }
+
+      .btn-outline {
+          background-color: transparent;
+          border: 2px solid #4f46e5;
+          color: #4f46e5;
+      }
+
+      .btn-outline:hover {
+          background-color: #4f46e5;
+          color: white;
+      }
+
+      /* Navigation */
+      .nav {
+          background-color: white;
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      }
+
+      .nav-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 64px;
+      }
+
+      .nav-logo {
+          font-size: 1.25rem;
+          font-weight: bold;
+          color: #1f2937;
+      }
+
+      .nav-links {
+          display: none;
+      }
+
+      .nav-links a {
+          margin-left: 2rem;
+          color: #4b5563;
+          text-decoration: none;
+          font-size: 0.875rem;
+      }
+
+      .nav-links a:hover {
+          color: #1f2937;
+      }

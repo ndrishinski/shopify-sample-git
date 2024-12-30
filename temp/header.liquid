@@ -1,0 +1,24 @@
+<nav class="nav">
+  <div class="container nav-container">
+      <a style="text-decoration: none;" href="{{ route.base_url }}" class="nav-logo">Logo</a>
+      <div class="nav-links">
+        {% for link in linklists.header.links %}
+          <a href="{{ link.url }}">{{  link.title}}</a>
+        {% endfor %}
+      </div>
+      <a href="{{ section.settings.buy-now-link }}" class="btn">Buy Now</a>
+  </div>
+</nav>
+
+{%  schema  %} 
+{
+  "name": "Header-Yo",
+  "settings": [
+    {
+      "type": "product",
+      "id": "buy-now-link",
+      "label": "Link for Button"
+    }
+  ]
+}
+{% endschema %}
